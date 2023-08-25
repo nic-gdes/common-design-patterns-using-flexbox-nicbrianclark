@@ -1,0 +1,194 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.grid-item {
+    border: 1px solid #d1d1d1; 
+    padding: .5rem;
+    border-radius: 2px;
+}
+h2 {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+.container {
+    display: flex;
+    min-height: 100px;
+    gap: .5rem;
+    width: 100%;
+}
+.item {
+    min-height: 30px;
+    background-color: #a2cbfa;
+    border: 1px solid #4390e1;
+    border-radius: 2px;
+    width: 100%;
+}
+
+/* Stretch all - Default Flex */
+
+/* Stretch Middle */
+.container-2 .item {
+    width: 20px;
+}
+.container-2 .item-2 {
+    flex-grow: 2;
+}
+
+/* Alternating Grid */
+.container-3 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-3 .item {
+    width: 47%;
+}
+
+.container-3 .item:nth-child(3) {
+    width: 100%;
+}
+
+/* 3x3 Grid */
+.container-4 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-4 .item {
+    width: 29%;
+    margin-bottom: 3%;
+}
+
+/* 3x3 (1:1) */
+.container-5 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.container-5 .item {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 3%;
+}
+
+/* 3x3 (16:9) */
+.container-6 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.container-6 .item {
+    height: 34px;
+    width: 60px;
+    margin-bottom: 3%;
+    min-height: 0;
+}
+
+/* Vertical Bars */
+.container-7 {
+    align-items: flex-end;
+}
+.container-7 .item-1 {
+    height: 50px;
+}
+.container-7 .item-2 {
+    height: 100px;
+}
+.container-7 .item-3 {
+    height: 200px;
+}
+.container-7 .item-4 {
+    height: 150px;
+}
+.container-7 .item-5 {
+    height: 10px;
+}
+
+/* Vertical Bars */
+.container-8 {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.container-8 .item {
+    margin-bottom: 3%;
+}
+.container-8 .item-1 {
+    width: 50px;
+}
+.container-8 .item-2 {
+    width: 100px;
+}
+.container-8 .item-3 {
+    width: 200px;
+}
+.container-8 .item-4 {
+    width: 150px;
+}
+.container-8 .item-5 {
+    width: 10px;
+}
+
+/* Vertical Stack */
+.container-9 {
+    flex-direction: column;
+    align-items: center;
+}
+.container-9 .item {
+    max-width: 150px;
+    margin-bottom: 3%;
+}
+
+/* Masonry */
+.container-10 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 300px;
+}
+
+.container-10 .item {
+    min-height: 10px;
+    max-width: 30%;
+    margin-bottom: 3%;
+}
+
+.container-10 .item-1 {
+    height: 50px;
+}
+.container-10 .item-2 {
+    height: 75px;
+}
+.container-10 .item-3 {
+    height: 50px;
+}
+.container-10 .item-4 {
+    height: 100px;
+}
+.container-10 .item-5 {
+    height: 60px;
+}
+.container-10 .item-6 {
+    height: 85px;
+}
+.container-10 .item-7 {
+    height: 50px;
+}
+.container-10 .item-8 {
+    height: 60px;
+}
+.container-10 .item-9 {
+    height: 55px;
+}
+.container-10 .item-10 {
+    height: 50px;
+}
